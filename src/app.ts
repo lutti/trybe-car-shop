@@ -1,4 +1,4 @@
-import 'express-async-errors';
+// import 'express-async-errors';
 import express from 'express';
 import CarRouter from './routers/CarRouter';
 import MotorcycleRouter from './routers/MotorcycleRouter';

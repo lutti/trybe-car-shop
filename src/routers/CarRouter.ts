@@ -1,4 +1,4 @@
-import 'express-async-errors';
+// import 'express-async-errors';
 import { Router } from 'express';
 import CarController from '../Controllers/CarController';
 // import LoginFieldsMiddleware from '../middlewares/LoginFieldsMiddleware';
