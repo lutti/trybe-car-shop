@@ -7,5 +7,8 @@ import CarController from '../Controllers/CarController';
 const router = Router();
 
 router.post('/', CarController.create);
+router.get('/', CarController.findAll);
+router.get('/:id', CarController.findById);
+router.put('/:id', CarController.updateById);
 
 export default router;

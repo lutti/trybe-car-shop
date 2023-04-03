@@ -6,6 +6,21 @@ class CarController {
     const car = await CarService.create(req.body);
     res.status(201).json(car);
   }
+
+  static async findAll(req: Request, res: Response, _next: NextFunction) {
+    const cars = await CarService.findAll();
+    res.status(200).json(cars);
+  }
+
+  static async findById(req: Request, res: Response, _next: NextFunction) {
+    const car = await CarService.findById(req.params.id);
+    res.status(200).json(car);
+  }
+
+  static async updateById(req: Request, res: Response, _next: NextFunction) {
+    const car = await CarService.updateById(req.params.id, req.body);
+    res.status(200).json(car);
+  }
 }
 
 export default CarController;
